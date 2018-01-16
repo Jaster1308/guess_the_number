@@ -22,6 +22,7 @@ def get_guess():
 
 
 def validate_guess(low=1, high=10):
+    """validates the guess """
     guess = -1
     while guess < 0:  # chick if guess is valid
         str_guess = input('Guess the secret number? ')
