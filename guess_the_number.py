@@ -79,15 +79,6 @@ def check_guess(guess, secret):
 
 def main():
     while True:
-<<<<<<< HEAD
-        guesses += 1
-        guess = get_guess(low, high)
-        result = check_guess(guess, secret)
-        print(result)
-
-        if result == correct:
-            print("The number of guess: " + str(guesses))
-=======
         # sets number of guesses to 0
         guesses = 0
         (low, high) = configure_range()
@@ -109,7 +100,6 @@ def main():
         if play == "Y" or play == "y":
             continue
         else:
->>>>>>> 518b17c2e45b60e8958ba9731969e8632fced000
             break
 
 
