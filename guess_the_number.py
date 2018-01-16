@@ -78,11 +78,8 @@ def check_guess(guess, secret):
 
 
 def main():
-    guesses = 0
-    (low, high) = configure_range()
-    secret = generate_secret(low, high)
-
     while True:
+<<<<<<< HEAD
         guesses += 1
         guess = get_guess(low, high)
         result = check_guess(guess, secret)
@@ -90,6 +87,29 @@ def main():
 
         if result == correct:
             print("The number of guess: " + str(guesses))
+=======
+        # sets number of guesses to 0
+        guesses = 0
+        (low, high) = configure_range()
+        secret = generate_secret(low, high)
+
+        while True:
+            # increments by 1
+            guesses += 1
+            guess = get_guess()
+            result = check_guess(guess, secret)
+            print(result)
+
+            if result == correct:
+                # prints number of guesses
+                print("The number of guess: " + str(guesses))
+                break
+
+        play = input("Would you like to play again? Y/N ")
+        if play == "Y" or play == "y":
+            continue
+        else:
+>>>>>>> 518b17c2e45b60e8958ba9731969e8632fced000
             break
 
 
