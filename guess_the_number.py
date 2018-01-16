@@ -87,7 +87,7 @@ def main():
         while True:
             # increments by 1
             guesses += 1
-            guess = get_guess()
+            guess = get_guess(low, high)
             result = check_guess(guess, secret)
             print(result)
 
